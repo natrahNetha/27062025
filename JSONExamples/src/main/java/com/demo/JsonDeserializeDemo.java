@@ -12,8 +12,11 @@ public class JsonDeserializeDemo {
         ObjectMapper mapper = new ObjectMapper();
        
         
+        
+        
         Customer customer = mapper.readValue(new File("D:\\Java Projects\\WorkStation\\Spring-boot\\JSONExamples\\src\\main\\resources\\natraj.json"), Customer.class);
         
+       // System.out.println("The Customer Object is: " + customer);
         System.out.println("The Customer Object is: " + customer);
     }
 }
